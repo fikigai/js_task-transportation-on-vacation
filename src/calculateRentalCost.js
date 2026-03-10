@@ -14,7 +14,9 @@ function calculateRentalCost(days) {
 
   if (days >= DURATION_WEEK) {
     totalCost -= DISCOUNT_SECOND;
-  } else if (days >= DURATION_THREE && days < DURATION_WEEK) {
+  }
+
+  if (days >= DURATION_THREE && days < DURATION_WEEK) {
     totalCost -= DISCOUNT_FIRST;
   }
 
